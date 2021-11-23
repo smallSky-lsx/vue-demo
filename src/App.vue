@@ -90,6 +90,8 @@ export default {
     }
     img {
         position: absolute;
+        left: 50%;
+        margin-left: -50px;
         width: 100px;
         height: 100px;
         object-fit: cover;
@@ -99,6 +101,7 @@ export default {
     }
     .next-enter,
     .prev-leave-to {
+        opacity: 0;
         transform: translateX(100%);
     }
     .next-enter-active,
@@ -109,6 +112,7 @@ export default {
     }
     .next-leave-to,
     .prev-enter {
+        opacity: 0;
         transform: translateX(-100%);
     }
 }
